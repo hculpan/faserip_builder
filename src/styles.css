@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+
+.underline {
+    border-bottom: 1px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+label {
+    padding-right: 10px;
+}

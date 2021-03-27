@@ -1,0 +1,13 @@
+.hero-name {
+    color: white;
+    background-color: blue;
+    text-align: center;
+}
+
+#hero-name {
+    color: white;
+    background-color: blue;
+    text-align: center;
+    font-weight: bolder;
+    font-size: larger;
+}

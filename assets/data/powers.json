@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Flight",
+        "basecost": 10,
+        "multiplier": 1,
+        "description": ""
+    },
+    {
+        "name": "Earth Control",
+        "basecost": 10,
+        "multiplier": 1,
+        "description": ""
+    },
+    {
+        "name": "Air Control",
+        "basecost": 10,
+        "multiplier": 1,
+        "description": ""
+    },
+    {
+        "name": "Body Transformation",
+        "basecost": 20,
+        "multiplier": 2,
+        "description": ""
+    }
+]

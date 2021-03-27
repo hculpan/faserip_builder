@@ -1,0 +1,8 @@
+<h4 class="text-center">Powers</h4>
+<div class="row">
+    <button type="button" (click)="addPower" class="btn btn-primary col-lg-1 text-center">+</button>
+    <select class="form-control col-sm">
+        <option *ngFor="let power of powerList">{{ power.basecost + " - " + power.name }}</option>
+    </select>
+</div>
+

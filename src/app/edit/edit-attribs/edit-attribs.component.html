@@ -1,0 +1,70 @@
+<div class="row">
+    <div class="col-sm">Fighting</div>
+    <div class="col-sm">
+        <input type="number" id="fighting" class="underline text-center" size=2 
+        (change)="updateDescriptor('fighting-descriptor', Hero.Fighting)" [(ngModel)]="Hero.Fighting">
+    </div>
+    <div class="col-sm" id="fighting-descriptor">
+        {{ updateDescriptor('fighting-descriptor', Hero.Fighting) }}
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm">Agility</div>
+    <div class="col-sm">
+        <input type="number" id="agility" class="underline text-center" size=2 
+        (change)="updateDescriptor('agility-descriptor', Hero.Agility)" [(ngModel)]="Hero.Agility">
+    </div>
+    <div class="col-sm" id="agility-descriptor">
+        {{ updateDescriptor('agility-descriptor', Hero.Agility) }}
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm">Strength</div>
+    <div class="col-sm">
+        <input type="number" id="strength" class="underline text-center" size=2 
+        (change)="updateDescriptor('strength-descriptor', Hero.Strength)" [(ngModel)]="Hero.Strength">
+    </div>
+    <div class="col-sm" id="strength-descriptor">
+        {{ updateDescriptor('strength-descriptor', Hero.Strength) }}
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm">Endurance</div>
+    <div class="col-sm">
+        <input type="number" id="endurance" class="underline text-center" size=2 
+        (change)="updateDescriptor('endurance-descriptor', Hero.Endurance)" [(ngModel)]="Hero.Endurance">
+    </div>
+    <div class="col-sm" id="endurance-descriptor">
+        {{ updateDescriptor('endurance-descriptor', Hero.Endurance) }}
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm">Reason</div>
+    <div class="col-sm">
+        <input type="number" id="reason" class="underline text-center" size=2 
+        (change)="updateDescriptor('reason-descriptor', Hero.Reason)" [(ngModel)]="Hero.Reason">
+    </div>
+    <div class="col-sm" id="reason-descriptor">
+        {{ updateDescriptor('reason-descriptor', Hero.Reason) }}
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm">Intuition</div>
+    <div class="col-sm">
+        <input type="number" id="intuition" class="underline text-center" size=2 
+        (change)="updateDescriptor('intuition-descriptor', Hero.Intuition)" [(ngModel)]="Hero.Intuition">
+    </div>
+    <div class="col-sm" id="intuition-descriptor">
+        {{ updateDescriptor('intuition-descriptor', Hero.Intuition) }}
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm">Psyche</div>
+    <div class="col-sm">
+        <input type="number" id="psyche" class="underline text-center" size=2 
+        (change)="updateDescriptor('psyche-descriptor', Hero.Psyche)" [(ngModel)]="Hero.Psyche">
+    </div>
+    <div class="col-sm" id="psyche-descriptor">
+        {{ updateDescriptor('psyche-descriptor', Hero.Psyche) }}
+    </div>
+</div>

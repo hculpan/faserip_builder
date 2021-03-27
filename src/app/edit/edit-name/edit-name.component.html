@@ -1,0 +1,15 @@
+<div class="row">
+    <div class="col hero-name">
+        <input type="text" id="hero-name" class="underline" [(value)]="Hero.Name">
+    </div>
+</div>
+<div class="row">
+    <div class="col-6-lg">
+        <label for="char-points">Character Points </label>
+        <input type="text" id="char-points" class="underline" [value]="Hero.PointsSpent">
+    </div>
+    <div class="col text-right">
+        <label for="remaining-char-points">Remaining Character Points </label>
+        <input type="text" id="remaining-char-points" class="underline" readonly [value]="Hero.OriginalPoints - Hero.PointsSpent">
+    </div>
+</div>
