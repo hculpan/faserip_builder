@@ -1,8 +1,21 @@
 <h4 class="text-center">Powers</h4>
 <div class="row">
-    <button type="button" (click)="addPower" class="btn btn-primary col-lg-1 text-center">+</button>
-    <select class="form-control col-sm">
-        <option *ngFor="let power of powerList">{{ power.basecost + " - " + power.name }}</option>
+    <button type="button" (click)="addPower()" class="btn btn-primary form-control col-lg-1 text-center">+</button>
+    <select class="form-select col-sm" (change)="powerSelected($event)">
+        <option *ngFor="let power of powerList; index as lastindex;" value="{{ lastindex }}">{{ power.basecost + " - " + power.name }}</option>
     </select>
 </div>
-
+<div class="row">
+    <div class="col-sm-2 text-center">Cost</div>
+    <div class="col-sm-4">Name</div>
+    <div class="col-sm-2 text-center">Rating</div>
+    <div class="col-sm-2 text-center">Descr</div>
+</div>
+<div class="row" *ngFor="let power of Hero.Powers">
+    <div class="col-sm-2 text-center">{{ power.BaseCost + (power.Multiplier * power.Rating)}}</div>
+    <div class="col-sm-4 text-left">{{ power.Name }}</div>
+    <div class="col-sm-2 text-center">
+        {{ power.Rating }}
+    </div>
+    <div class="col-sm-2 text-center">{{ power.RatingDescriptor }}</div>
+</div>

@@ -10,6 +10,8 @@ import { Character } from '../../../model/character'
 export class EditPowersComponent implements OnInit {
   @Input() Hero: Character
   powerList: PowerDefinition[]
+  selectedPower: PowerDefinition
+
 
   constructor(public powers: PowersService) { 
     var powersArray:any = powers.GetPowers()
@@ -18,12 +20,17 @@ export class EditPowersComponent implements OnInit {
       this.powerList.push(powersArray.default[i])
     }
     this.powerList.sort((a, b) => (a.name > b.name) ? 1 : -1)
+    this.selectedPower = this.powerList[0]
   }
 
   ngOnInit(): void {
   }
 
+  powerSelected(event: any) {
+    this.selectedPower = this.powerList[event.srcElement.selectedOptions[0].value]
+  }
+
   addPower() {
-    console.log("Adding power")
+    this.Hero.AddNewPower(this.selectedPower)
   }
 }
